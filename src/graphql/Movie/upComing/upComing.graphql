@@ -1,0 +1,15 @@
+type upComingResponse {
+    id: Int!
+    title: String!
+    poster_path: String!
+    backdrop_path: String!
+    overview: String!
+    release_date: String!
+    popularity: Float!
+    vote_count: Int!
+    vote_average: Float!
+}
+
+type Query {
+    upComing: [upComingResponse!]!
+}

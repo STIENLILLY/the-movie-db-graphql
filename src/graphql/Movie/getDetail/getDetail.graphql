@@ -1,0 +1,21 @@
+type Genres {
+    id: Int!
+    name: String!
+}
+
+type getDetailResponse {
+    id: Int!
+    title: String!
+    poster_path: String!
+    backdrop_path: String!
+    overview: String!
+    release_date: String!
+    popularity: Float!
+    vote_count: Int!
+    vote_average: Float!
+    genres: [Genres]
+}
+
+type Query {
+    getDetail(id: Int!): getDetailResponse
+}

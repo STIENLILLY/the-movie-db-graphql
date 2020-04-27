@@ -1,0 +1,24 @@
+type Genres {
+    id: Int!
+    name: String!
+}
+
+type getDetailTvResponse {
+    id: Int!
+    name: String!
+    poster_path: String!
+    backdrop_path: String!
+    overview: String!
+    first_air_date: String!
+    last_air_date: String!
+    popularity: Float!
+    vote_count: Int!
+    vote_average: Float!
+    number_of_episodes: Int!
+    number_of_seasons: Int!
+    genres: [Genres]
+}
+
+type Query {
+    getDetailTv(id: Int!): getDetailTvResponse
+}

@@ -1,0 +1,14 @@
+type getThisWeekResponse {
+    id: Int!
+    name: String!
+    poster_path: String!
+    backdrop_path: String!
+    overview: String!
+    popularity: Float!
+    vote_count: Int!
+    vote_average: Float!
+}
+
+type Query {
+    getThisWeek: [getThisWeekResponse!]!
+}
